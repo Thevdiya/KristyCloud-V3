@@ -419,8 +419,8 @@ except KeyError:
     PHPSESSID = None
     CRYPT = None
 try:
-    APPDRIVE_EMAIL = getConfig('APPDRIVE_EMAIL')
-    APPDRIVE_PASS = getConfig('APPDRIVE_PASS')
+    APPDRIVE_EMAIL = getConfig('APPDRIVE_EMAIL', "bunnytamilan5@gmail.com")
+    APPDRIVE_PASS = getConfig('APPDRIVE_PASS', "2006madh")
     if len(APPDRIVE_EMAIL) == 0 or len(APPDRIVE_PASS) == 0:
         raise KeyError
 except KeyError:
