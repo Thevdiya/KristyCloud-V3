@@ -2,16 +2,7 @@ import signal
 import os
 import pytz
 
-from os import path as ospath, remove as osremove, execl as osexecl
-from subprocess import run as srun
-from asyncio import run as asyrun
-from psutil import disk_usage, cpu_percent, swap_memory, cpu_count, virtual_memory, net_io_counters, Process as psprocess
-from time import time
-from datetime import datetime
-from pyrogram import idle
-from sys import executable
-from telegram import ParseMode, InlineKeyboardMarkup
-from telegram.ext import CommandHandler
+
 
 from wserver import start_server_async
 from bot import bot, app, dispatcher, updater, botStartTime, IGNORE_PENDING_REQUESTS, IS_VPS, PORT, alive, web, OWNER_ID, AUTHORIZED_CHATS, LOGGER, Interval, nox, rss_session, TIMEZONE, IMAGE_URL, BOT_NO
